@@ -719,6 +719,7 @@ header {
    table 
    ------------------------------------*/
 table {
+	width: 100%;
 	margin: 20px auto;
 	font-size:1.3em;
 	line-height: 2em;
@@ -793,6 +794,28 @@ table.brwsr2 td.bar {
 	height: 1px;
 	width: 100%;
 	border-top: solid 1px #34495e;
+}
+
+@media screen and (max-width: 640px) {
+	table.brwsr2{
+		width: 100%;
+	}
+	
+	table.brwsr2 tr{
+		width:100%;
+	}
+	
+	table.brwsr2 th{
+		width:100%;
+		display: block;
+		border-right: none;
+		border-bottom: solid 1px #666;
+	}
+	
+	table.brwsr2 td.data{
+		width:100%;
+		display: block;
+	}
 }
 
 /*------------------------------------
