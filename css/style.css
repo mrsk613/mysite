@@ -38,6 +38,7 @@ h4{
 	color: #FFF;
 	font-weight: 100;
 	padding: 5px;
+	font-weight: bold;
 	position: relative;
 }
 
@@ -468,6 +469,7 @@ header {
 
 .breadcrumb ul li:last-child {
     padding-right: 0;
+	font-weight: bold;
 }
 
 .breadcrumb ul li:last-child:after {
@@ -582,7 +584,7 @@ header {
 #page_top a::before{
   font-family: 'Font Awesome 5 Free';
   font-weight: 900;
-  content: '\f102';
+  content: '\f106';
   font-size: 25px;
   color: #fff;
   position: absolute;
@@ -767,17 +769,16 @@ table.brwsr2 th {
 	border-right: solid 1px #666;
 	margin: 0;
 	text-align: center;
-	color: #009B7A;
 	font-weight: bold;
 }
 
 table.brwsr2 td.data {
-	padding: 0;
+	padding: 0 0 0 10px;
 	margin: 0;
 	width: 70%;
 	border: none;
 	color: #666;
-	text-align: center;
+	text-align: left;
 	vertical-align: middle;
 	white-space: nowrap;
 	overflow: hidden;
@@ -879,7 +880,15 @@ a .box-3 p{
 	padding: 0.5em 1em;
     margin: 0.5em 0;
     background: #FFF;
-    border-left: double 7px #58639F;
+    border-left: double 7px #707070;
+}
+
+.web .linkBox{
+	border-left: double 7px #58639F;
+}
+
+.dtp .linkBox{
+	border-left: double 7px #009B7A;
 }
 
 .linkBox a{
