@@ -5,7 +5,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: '游ゴシック';
+    font-family: "游ゴシック";
 }
 
 a {
@@ -14,7 +14,12 @@ a {
 
 p {
     line-height: 2;
-    font-size: 17px;
+    font-size: 16px;
+    margin: 0 0 12px 0;
+}
+
+figure {
+    margin: 0 0 30px 0;
 }
 
 .mt-30 {
@@ -123,7 +128,6 @@ table {
     }
 }
 
-
 #page_top a {
     display: flex;
     position: relative;
@@ -153,7 +157,7 @@ table {
 }
 
 #page_top a::before {
-    content: '▲';
+    content: "▲";
     position: absolute;
     font-size: 1.8em;
     top: 15%;
@@ -207,7 +211,7 @@ header .logo a {
     font-family: Arial;
     font-weight: bold;
     font-size: 2em;
-    transition: all .3s;
+    transition: all 0.3s;
 }
 
 header .logo a:hover {
@@ -248,30 +252,30 @@ header li {
 }
 
 header li.about {
-    color: #C36068;
+    color: #c36068;
     padding: 0 10px;
 }
 
 header li.web {
-    color: #58639F;
+    color: #58639f;
     padding: 0 10px;
 }
 
 header li.dtp {
-    color: #589F8C;
+    color: #589f8c;
     padding: 0 10px;
 }
 
 header ul a.about:hover {
-    color: #C36068;
+    color: #c36068;
 }
 
 header ul a.web:hover {
-    color: #58639F;
+    color: #58639f;
 }
 
 header ul a.dtp:hover {
-    color: #589F8C;
+    color: #589f8c;
 }
 
 /* h1まわり */
@@ -279,7 +283,7 @@ header ul a.dtp:hover {
 h1.web {
     padding: 20px 0 20px 50px;
     color: #fff;
-    background: #58639F;
+    background: #58639f;
     width: 60%;
     margin-bottom: 60px;
 }
@@ -287,7 +291,7 @@ h1.web {
 h1.dtp {
     padding: 20px 0 20px 50px;
     color: #fff;
-    background: #009B7A;
+    background: #009b7a;
     width: 60%;
     margin-bottom: 60px;
 }
@@ -310,10 +314,10 @@ h1.dtp {
 
 .content_red::after {
     position: absolute;
-    content: '';
+    content: "";
     top: 20px;
     left: 0;
-    background: #C36068;
+    background: #c36068;
     width: 70%;
     height: 200px;
     z-index: -1;
@@ -325,10 +329,10 @@ h1.dtp {
 
 .content_blue::after {
     position: absolute;
-    content: '';
+    content: "";
     top: 20px;
     left: 0;
-    background: #58639F;
+    background: #58639f;
     width: 70%;
     height: 200px;
     z-index: -1;
@@ -340,10 +344,10 @@ h1.dtp {
 
 .content_green::after {
     position: absolute;
-    content: '';
+    content: "";
     top: 20px;
     left: 0;
-    background: #589F8C;
+    background: #589f8c;
     width: 70%;
     height: 200px;
     z-index: -1;
@@ -354,7 +358,6 @@ h1.dtp {
 }
 
 @media screen and (max-width: 768px) {
-
     h1.web,
     h1.dtp {
         padding: 20px 0 20px 20px;
@@ -374,7 +377,6 @@ h1.dtp {
         padding: 50px 20px;
     }
 
-
     .content_red::after,
     .content_blue::after,
     .content_green::after {
@@ -385,14 +387,13 @@ h1.dtp {
 
 @keyframes test_box_slide {
     0% {
-        transform: translate(-100%, 0)
+        transform: translate(-100%, 0);
     }
 
     100% {
-        transform: translate(0, 0)
+        transform: translate(0, 0);
     }
 }
-
 
 /* top */
 
@@ -404,7 +405,7 @@ h1.dtp {
 }
 
 .top h1 {
-    font-family: 'Arial';
+    font-family: "Arial";
     font-weight: bold;
     padding-top: 300px;
     font-size: 10em;
@@ -412,9 +413,8 @@ h1.dtp {
     color: #363636;
 }
 
-
 .top p {
-    font-family: 'Arial';
+    font-family: "Arial";
     font-weight: bold;
     font-size: 3em;
     padding-left: 50px;
@@ -437,16 +437,15 @@ h1.dtp {
     }
 }
 
-
 /* about */
 
 .bg-red {
-    background: #C36068;
+    background: #c36068;
 }
 
 h2.about {
     text-align: center;
-    font-family: 'Arial';
+    font-family: "Arial";
     font-weight: bold;
     font-size: 2em;
     margin-bottom: 30px;
@@ -463,7 +462,7 @@ h2.about {
 
 .name span {
     font-size: 0.7em;
-    color: #C36068;
+    color: #c36068;
 }
 
 .about_table td {
@@ -473,7 +472,7 @@ h2.about {
 .about_table th {
     width: 20%;
     padding: 10px;
-    color: #C36068;
+    color: #c36068;
 }
 
 .graph_content {
@@ -494,14 +493,14 @@ h2.about {
     .about_table th {
         display: block;
         width: 100%;
-        background: #C36068;
+        background: #c36068;
         color: #fff;
     }
 
     .about_table td {
         display: block;
         width: 100%;
-    }    
+    }
 }
 
 .graph_content:before {
@@ -551,7 +550,7 @@ h2.about {
 
 .graph.item01 {
     top: 8%;
-    background: #C36068;
+    background: #c36068;
     width: 95%;
 }
 
@@ -563,7 +562,7 @@ h2.about {
 
 .graph.item02 {
     top: 33%;
-    background: #C36068;
+    background: #c36068;
     width: 95%;
 }
 
@@ -575,7 +574,7 @@ h2.about {
 
 .graph.item03 {
     top: 58%;
-    background: #C36068;
+    background: #c36068;
     width: 35%;
 }
 
@@ -587,31 +586,31 @@ h2.about {
 
 .graph.item04 {
     top: 83%;
-    background: #C36068;
+    background: #c36068;
     width: 35%;
 }
 
 .graph.item05 {
     top: 8%;
-    background: #C36068;
+    background: #c36068;
     width: 80%;
 }
 
 .graph.item06 {
     top: 33%;
-    background: #C36068;
+    background: #c36068;
     width: 80%;
 }
 
 .graph.item07 {
     top: 58%;
-    background: #C36068;
+    background: #c36068;
     width: 60%;
 }
 
 .graph.item08 {
     top: 83%;
-    background: #C36068;
+    background: #c36068;
     width: 60%;
 }
 
@@ -627,8 +626,6 @@ h2.about {
     }
 }
 
-
-
 /* design_common */
 .zoomInText {
     position: relative;
@@ -638,7 +635,7 @@ h2.about {
 .zoomInText span.mask {
     position: absolute;
     z-index: 2;
-    transition: .3s ease-in-out;
+    transition: 0.3s ease-in-out;
     display: block;
     line-height: 0;
     overflow: hidden;
@@ -648,18 +645,16 @@ h2.about {
     height: 100%;
     background: rgba(0, 0, 0, 0.5);
     opacity: 0;
-
 }
 
 .zoomInText:hover span.mask {
     opacity: 1;
-
 }
 
 .zoomInText img {
     width: 100%;
     filter: blur(0);
-    transition: .3s ease-in-out;
+    transition: 0.3s ease-in-out;
 }
 
 .zoomInText:hover img {
@@ -668,7 +663,10 @@ h2.about {
 
 .zoomInText span.cap {
     opacity: 0;
-    transition: .3s ease-in-out;
+    transition: 0.3s ease-in-out;
+    display: block;
+    width: 100%;
+    text-align: center;
     position: absolute;
     font-size: 1.2em;
     z-index: 3;
@@ -687,7 +685,7 @@ h2.about {
 h4 {
     margin-top: 30px;
     font-size: 1.3em;
-    color: #FFF;
+    color: #fff;
     font-weight: 100;
     padding: 5px 10px;
     font-weight: bold;
@@ -699,11 +697,11 @@ h4 span {
     right: 10px;
     top: 5px;
     text-align: right;
-    color: #FFF;
+    color: #fff;
 }
 
 .popup::after {
-    background: url('image/popup.png') left center no-repeat;
+    background: url("image/popup.png") left center no-repeat;
     background-size: auto 80%;
 }
 
@@ -720,7 +718,7 @@ h4 span {
 .pageNation {
     display: block;
     position: relative;
-    margin-bottom: 60px;
+    margin: 60px 0;
     padding-bottom: 30px;
 }
 
@@ -751,22 +749,22 @@ h4 span {
         text-align: right;
         padding-top: 10px;
     }
-    
+
     .pageNation .left {
         position: relative;
     }
-
 }
 
 /* webdesign */
 
 .bg-blue {
-    background: #58639F;
+    background: #58639f;
 }
 
 ul.list_blue {
     list-style: none;
     padding-top: 20px;
+    margin-bottom: 30px;
 }
 
 ul.list_blue li {
@@ -783,17 +781,17 @@ ul.list_blue li:before {
     padding: 0.5em;
     left: 0;
     top: 0;
-    color: #58639F;
+    color: #58639f;
     font-weight: bold;
     font-size: 1.1em;
 }
 
 ul.list_blue a {
-    color: #58639F;
+    color: #58639f;
     font-weight: bold;
     display: block;
     text-decoration: underline;
-    transition: all .3s;
+    transition: all 0.3s;
     font-size: 1.1em;
 }
 
@@ -807,7 +805,7 @@ ul.list_blue a:hover {
     padding: 0.5rem;
     background: #f7f7f7;
     text-align: left;
-    border-left: solid 6px #58639F;
+    border-left: solid 6px #58639f;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.22);
 }
 
@@ -821,6 +819,66 @@ ul.list_blue a:hover {
     opacity: 0.6;
 }
 
+table.web_table {
+    width: 100%;
+    border: none;
+    border-top: solid 1px #666;
+    border-bottom: solid 1px #666;
+    border-collapse: separate;
+    border-spacing: 0 10px;
+    margin: 30px auto 10px auto;
+}
+
+table.web_table th {
+    vertical-align: middle;
+    width: 30%;
+    border-right: solid 1px #666;
+    margin: 0;
+    text-align: center;
+    font-weight: bold;
+    color: #58639f;
+}
+
+table.web_table td.data {
+    padding: 0 0 0 10px;
+    margin: 0;
+    width: 70%;
+    border: none;
+    color: #666;
+    text-align: left;
+    vertical-align: middle;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+table.web_table td.bar {
+    height: 1px;
+    width: 100%;
+    border-top: solid 1px #363636;
+}
+
+@media screen and (max-width: 768px) {
+    table.web_table {
+        width: 100%;
+    }
+
+    table.web_table tr {
+        width: 100%;
+    }
+
+    table.web_table th {
+        width: 100%;
+        display: block;
+        border-right: none;
+        border-bottom: solid 1px #666;
+    }
+
+    table.web_table td.data {
+        width: 100%;
+        display: block;
+    }
+}
+
 @media screen and (max-width: 768px) {
     .tag_web {
         width: 100%;
@@ -832,7 +890,7 @@ ul.list_blue a:hover {
 /* dtpdesign */
 
 .bg-green {
-    background: #589F8C;
+    background: #589f8c;
 }
 
 ul.list_green {
@@ -854,17 +912,17 @@ ul.list_green li:before {
     padding: 0.5em;
     left: 0;
     top: 0;
-    color: #589F8C;
+    color: #589f8c;
     font-weight: bold;
     font-size: 1.1em;
 }
 
 ul.list_green a {
-    color: #589F8C;
+    color: #589f8c;
     font-weight: bold;
     display: block;
     text-decoration: underline;
-    transition: all .3s;
+    transition: all 0.3s;
     font-size: 1.1em;
 }
 
@@ -878,7 +936,7 @@ ul.list_green a:hover {
     padding: 0.5rem;
     text-align: left;
     background: #f7f7f7;
-    border-left: solid 6px #589F8C;
+    border-left: solid 6px #589f8c;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.22);
 }
 
@@ -901,13 +959,13 @@ ul.list_green a:hover {
 }
 
 table.dtp_table {
-    margin: 15px auto;
     width: 100%;
     border: none;
     border-top: solid 1px #666;
     border-bottom: solid 1px #666;
     border-collapse: separate;
     border-spacing: 0 10px;
+    margin: 30px auto 10px auto;
 }
 
 table.dtp_table th {
@@ -917,7 +975,7 @@ table.dtp_table th {
     margin: 0;
     text-align: center;
     font-weight: bold;
-    color: #009B7A;
+    color: #009b7a;
 }
 
 table.dtp_table td.data {
@@ -966,4 +1024,5 @@ table.dtp_table td.bar {
 footer {
     text-align: center;
     padding: 20px 0;
+    margin: 60px 0 0 0;
 }
