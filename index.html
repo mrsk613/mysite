@@ -5,29 +5,133 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="image/favicon.ico">
-    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="icon" href="assets/img/favicon.ico">
+    <link rel="stylesheet" href="assets/css/main.css">
 
-    <title>PORTFOLIO</title>
+    <title>Portfolio</title>
 </head>
 
 <body>
-    <header>
-        <div class="logo"></div>
-        <nav>
-            <ul>
-                <li><a href="about.html" class="about">ABOUT</a></li>
-                <li><a href="web/index.html" class="web">WEB</a></li>
-                <li><a href="dtp/index.html" class="dtp">DTP</a></li>
-            </ul>
+    <header class="site-header">
+        <nav class="nav">
+            <a href="profile.html">Profile</a>
+            <a href="works/index.html">Works</a>
         </nav>
     </header>
     <main>
-        <div class="top">
-            <h1>PORTFOLIO</h1>
-            <p>Saki Morishita</p>
-        </div>
+        <section class="hero white-wave">
+            <div class="hero-bg"></div>
+            <div class="hero-content">
+                <h1 class="hero-title">Portfolio</h1>
+                <p class="hero-sub">Saki Morishita</p>
+            </div>
+        </section>
+        <search class="profile blue-wave">
+            <div class="profile_container">
+                <div class="flex-box mb-60">
+                    <figure class="profile_image"><img src="assets/img/profile.jpg" alt=""></figure>
+                    <div class="profile_text">
+                        <h2>Profile</h2>
+                        <p class="name"><strong>森下　紗稀</strong>Saki Morishita</p>
+                        <p>Designer/Front end engineer</p>
+                        <p>1996.06.13（29）</p>
+                        <p>東京都出身</p>
+                    </div>
+                </div>
+                <div class="buttun"><a href="profile.html">MORE</a></div>
+            </div>
+        </search>
+        <search class="skills white-wave">
+            <div class="skills_container">
+                <h2>Skills</h2>
+                <div class="flex-box">
+                    <div class="skills-box">
+                        <h3>Design</h3>
+                        <figure class="al-c"><img src="assets/img/design.png" alt=""></figure>
+                        <ul>
+                            <li>Photoshop</li>
+                            <li>illustrator</li>
+                            <li>XD</li>
+                            <li>Figma</li>
+                        </ul>
+                    </div>
+                    <div class="skills-box">
+                        <h3>Coding</h3>
+                        <figure class="al-c"><img src="assets/img/coding.png" alt=""></figure>
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                            <li>Visual Studio Code</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </search>
+        <search class="works blue-wave">
+            <h2>Works</h2>
+            <div class="works_container">
+                <div class="sliderArea">
+                    <div class="slider">
+                        <figure><img src="works/img/web01.jpg" alt="">
+                            <p class="category">design</p>
+                            <p><a href="works/corporate.html">コーポレートサイト改修</a></p>
+                        </figure>
+                        <figure><img src="works/img/web10.jpg" alt="">
+                            <p class="category">design/coding</p>
+                            <p><a href="works/portfolio.html">ポートフォリオ</a></p>
+                        </figure>
+                        <figure><img src="works/img/web02.jpg" alt="">
+                            <p class="category">operation</p>
+                            <p><a href="works/operation.html">官公庁のHP運用</a></p>
+                        </figure>
+                        <figure><img src="works/img/web03.jpg" alt="">
+                            <p class="category">design/coding</p>
+                            <p><a href="works/lp01.html">LP制作</a></p>
+                        </figure>
+                        <figure><img src="works/img/web04.jpg" alt="">
+                            <p class="category">design/coding</p>
+                            <p><a href="works/lp02.html">LP制作</a></p>
+                        </figure>
+                        <figure><img src="works/img/web11.jpg" alt="">
+                            <p class="category">design</p>
+                            <p><a href="works/banner.html">バナー制作</a></p>
+                        </figure>
+                    </div>
+                </div>
+                <div class="buttun"><a href="works/index.html">MORE</a></div>
+            </div>
+        </search>
     </main>
+    <footer>
+        <figure class="al-c"><img src="assets/img/bg.png" width="100%" alt=""></figure>
+        <p>© PORTFOLIO All Rights Reserved.</p>
+    </footer>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script>
+        $(document).on('ready', function () {
+            $(".slider").slick({
+                autoplay: false,
+                arrows: true,
+                slidesToShow: 3,
+                dots: false,
+                prevArrow: '<div class="slide-arrow prev-arrow"></div>',
+                nextArrow: '<div class="slide-arrow next-arrow"></div>',
+                responsive: [{
+                    breakpoint: 767,
+                    settings: {
+                        slidesToShow: 1
+                    }
+                }]
+            });
+        });
+    </script>
 </body>
 
 </html>
