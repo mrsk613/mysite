@@ -476,6 +476,7 @@ table.profile-table td {
     .pieces-contaier {
         display: block;
     }
+
     .pieces-contaier>div {
         width: 100%;
         margin: 0 0 40px 0;
@@ -591,8 +592,8 @@ p.category {
     }
 
     .detail-contaier .detail {
-    padding: 8px;
-}
+        padding: 8px;
+    }
 }
 
 @media screen and (max-width:480px) {
@@ -767,22 +768,28 @@ a.js-modal-link:hover {
 }
 
 .modal__image-wrap {
-  max-height: 60vh;
-  overflow-y: auto;
-  -webkit-overflow-scrolling: touch;
-  margin-bottom: 16px;
+    max-height: 60vh;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    margin-bottom: 16px;
 }
 
 .modal__image-wrap img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
 }
 
 p.modal__desc {
     margin: 0;
     text-align: left;
+}
+
+@media screen and (max-width:798px) {
+    .modal__image-wrap {
+        max-height: 50vh;
+    }
 }
 
 .slick-slide img {
