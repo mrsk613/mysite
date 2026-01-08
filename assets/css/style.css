@@ -768,6 +768,7 @@ a.js-modal-link:hover {
 
 .modal__img {
     max-width: 100%;
+    width:100vw;
     height: 80%;
     overflow-y: scroll;
     text-align: center;
@@ -870,3 +871,4 @@ footer p {
     text-align: center;
     margin: 0;
 }
+
