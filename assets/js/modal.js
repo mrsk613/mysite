@@ -22,11 +22,9 @@ function createModal(imgSrc, alt, desc) {
         <button class="modal__close js-modal-close" aria-label="閉じる">×</button>
 
         <div class="modal__body">
-        <div class="modal__img">
-        <figure>
+        <figure class="modal__image-wrap">
           <img src="${imgSrc}" alt="${alt}" class="modal__img">
         </figure>
-        </div>
           <p class="modal__desc">${desc}</p>
         </div>
       </div>
