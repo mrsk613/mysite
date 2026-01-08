@@ -739,6 +739,7 @@ a.js-modal-link:hover {
     max-width: 900px;
     position: relative;
     height: 80vh;
+    max-height: 80dvh;
     margin: 10vh auto 0;
     background: #fff;
     border-radius: 8px;
@@ -763,24 +764,20 @@ a.js-modal-link:hover {
 
 .modal__body {
     padding: 16px;
-    height: -webkit-fill-available;
 }
 
-.modal__img {
-    max-width: 100%;
-    width:100vw;
-    height: 80%;
-    overflow-y: scroll;
-    text-align: center;
-    margin-bottom: 16px;
+.modal__image-wrap {
+  max-height: 60vh;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  margin-bottom: 16px;
 }
 
-.modal__img figure {
-    overflow-y: auto;
-}
-
-.modal__img img {
-    max-width: 100%;
+.modal__image-wrap img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
 }
 
 p.modal__desc {
@@ -871,4 +868,3 @@ footer p {
     text-align: center;
     margin: 0;
 }
-
