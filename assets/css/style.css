@@ -452,6 +452,17 @@ table.profile-table td {
     .history-container {
         width: 100%;
     }
+    
+}
+
+@media screen and (max-width:520px) {
+    .history-container.flex-box {
+    display: block;
+}
+.history-container>div {
+    min-width: 100%;
+    margin: 0 0 24px 0;
+}
 }
 
 .pieces {
