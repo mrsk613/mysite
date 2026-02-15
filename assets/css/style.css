@@ -349,8 +349,12 @@ section,
     margin-right: 30px;
 }
 
+.profile_container .flex-box {
+    column-gap: 60px;
+}
+
 .profile_image {
-    margin-right: 60px;
+    text-align: center;
 }
 
 .profile_image img {
@@ -384,6 +388,14 @@ table.profile-table td {
 @media screen and (max-width: 768px) {
     .profile {
         padding: 150px 20px;
+    }
+
+    .profile_container .flex-box {
+        display: block;
+    }
+
+    .profile_image {
+        margin: 0 0 32px 0;
     }
 
     table.profile-table th {

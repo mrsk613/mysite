@@ -319,6 +319,10 @@ section {
 }
 
 @media screen and (max-width:768px) {
+    .hero-bg {
+        width: 210%;
+    }
+
     .profile {
         padding: 150px 20px;
     }
