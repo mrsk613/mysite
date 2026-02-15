@@ -1,29 +1,33 @@
-const categoryGroup = document.querySelector('#filter');
-const items = document.querySelectorAll('.work-box');
+document.addEventListener("DOMContentLoaded", () => {
+  document.querySelectorAll(".works-column").forEach(block => {
+    const pcBtn = block.querySelector(".pcBtn");
+    const spBtn = block.querySelector(".spBtn");
+    const preview = block.querySelector(".preview");
+    const inner = block.querySelector(".preview-inner");
+    const img = block.querySelector(".previewImg");
 
-categoryGroup.querySelectorAll('.filter-item').forEach(btn => {
-  btn.addEventListener('click', () => {
-    btn.classList.toggle('active');
-    filterItems();
-  });
-});
-
-function filterItems() {
-  const selected = [...categoryGroup.querySelectorAll('.active')]
-    .map(a => a.textContent.trim());
-
-  items.forEach(item => {
-    const categories = item.dataset.cat
-      .split(",")
-      .map(c => c.trim());
-
-    if (selected.length === 0) {
-      item.style.display = "";
+    if (!pcBtn || !spBtn || !preview || !inner || !img) {
+      console.warn("不足してる要素あり", block);
       return;
     }
 
-    const match = selected.some(sel => categories.includes(sel));
+    function switchView(type) {
+      preview.classList.remove("pc", "sp");
+      preview.classList.add(type);
 
-    item.style.display = match ? "" : "none";
+      const base = img.dataset.base;
+      img.src = `${base}_${type}.jpg`;
+
+      inner.scrollTop = 0;
+
+      pcBtn.classList.toggle("is-active", type === "pc");
+      spBtn.classList.toggle("is-active", type === "sp");
+    }
+
+    pcBtn.addEventListener("click", () => switchView("pc"));
+    spBtn.addEventListener("click", () => switchView("sp"));
+
+    // 初期表示
+    switchView("pc");
   });
-}
+});
