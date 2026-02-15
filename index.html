@@ -24,14 +24,19 @@
         </nav>
     </header>
     <main>
-        <section class="hero white-wave">
+        <section class="hero">
             <div class="hero-bg"></div>
             <div class="hero-content">
                 <h1 class="hero-title">Portfolio</h1>
                 <p class="hero-sub">Saki Morishita</p>
             </div>
+            <div class="wave white">
+                <svg viewBox="0 0 1440 160" preserveAspectRatio="none">
+                    <path d="M0,75 C360,150 720,10 1080,90 C1260,130 1440,50 1440,50 L1440,160 L0,160 Z"></path>
+                </svg>
+            </div>
         </section>
-        <search class="profile blue-wave">
+        <section class="profile">
             <div class="profile_container">
                 <div class="flex-box mb-60">
                     <figure class="profile_image"><img src="assets/img/profile.jpg" alt=""></figure>
@@ -45,8 +50,13 @@
                 </div>
                 <div class="buttun"><a href="profile.html">MORE</a></div>
             </div>
-        </search>
-        <search class="skills white-wave">
+            <div class="wave blue">
+                <svg viewBox="0 0 1440 160" preserveAspectRatio="none">
+                    <path d="M0,80  C360,140 720,20 1080,80  C1260,110 1440,60 1440,60  L1440,160 L0,160 Z"> </path>
+                </svg>
+            </div>
+        </section>
+        <section class="skills">
             <div class="skills_container">
                 <h2>Skills</h2>
                 <div class="flex-box">
@@ -72,8 +82,13 @@
                     </div>
                 </div>
             </div>
-        </search>
-        <search class="works blue-wave">
+            <div class="wave white">
+                <svg viewBox="0 0 1440 160" preserveAspectRatio="none">
+                    <path d="M0,75 C360,150 720,10 1080,90 C1260,130 1440,50 1440,50 L1440,160 L0,160 Z"></path>
+                </svg>
+            </div>
+        </section>
+        <section class="works">
             <h2>Works</h2>
             <div class="works_container">
                 <div class="sliderArea">
@@ -106,7 +121,12 @@
                 </div>
                 <div class="buttun"><a href="works/index.html">MORE</a></div>
             </div>
-        </search>
+            <div class="wave blue">
+                <svg viewBox="0 0 1440 160" preserveAspectRatio="none">
+                    <path d="M0,95 C360,110 720,70 1080,95 C1260,105 1440,85 1440,85 L1440,160 L0,160 Z"></path>
+                </svg>
+            </div>
+        </section>
     </main>
     <footer>
         <figure class="al-c"><img src="assets/img/bg.png" width="100%" alt=""></figure>
@@ -114,23 +134,7 @@
     </footer>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script>
-        $(document).on('ready', function () {
-            $(".slider").slick({
-                autoplay: false,
-                arrows: true,
-                slidesToShow: 3,
-                dots: false,
-                prevArrow: '<div class="slide-arrow prev-arrow"></div>',
-                nextArrow: '<div class="slide-arrow next-arrow"></div>',
-                responsive: [{
-                    breakpoint: 767,
-                    settings: {
-                        slidesToShow: 1
-                    }
-                }]
-            });
-        });
+    <script type="text/javascript" src="assets/js/main.js"></script>
     </script>
 </body>
 
