@@ -15,7 +15,7 @@
 </head>
 
 <body>
-    <header class="header">
+    <header class="header nowave">
         <a href="../index.html" class="title"><strong>Portfolio</strong></a>
         <nav class="nav">
             <a href="../profile.html">Profile</a>
@@ -30,49 +30,46 @@
                     <li>ポートフォリオサイト</li>
                 </ol>
             </nav>
-        <section class="container">
-            <figure class="al-c mb-60">
-                <img src="img/portfolio_01.jpg" alt="">
-            </figure>
-            <p><span class="category_text">design</span><span class="category_text">coding</span></p>
-            <h1 class="category_title">ポートフォリオサイト</h1>
-            <p>自主制作</p>
-            <p class="category_link"><a href="https://mrsk613.github.io/mysite/index.html" target="_blank" class="blank_icon">https://mrsk613.github.io/mysite/index.html</a></p>
-            <table class="works-table">
-                <tbody>
-                    <tr>
-                        <th>制作期間</th>
-                        <td class="data">2025年11月～12月</td>
-                    </tr>
-                    <tr>
-                        <td class="bar" colspan="6"></td>
-                    </tr>
-                    <tr>
-                        <th>担当領域</th>
-                        <td class="data">デザイン／コーディング</td>
-                    </tr>
-                    <tr>
-                        <td class="bar" colspan="6"></td>
-                    </tr>
-                    <tr>
-                        <th>使用ツール</th>
-                        <td class="data">Figma／Adobe Photoshop／Visual Studio Code</td>
-                    </tr>
-                </tbody>
-            </table>
-            <p>自身の活動をまとめたポートフォリオサイトです。</p>
-            <p>朝早く起きるのが得意なので、メインビジュアルは夜明けをイメージして作成しました。</p>
-            <p class="mb-60">また、海が好きなのでセクションの区切りに波っぽさを入れたり、上から下へ濃い青に変化するグラデーションを使用することで私自身のことを深く知っていただけるようなサイトであることと海の深さが表現できるようにしました。</p>
-            <div class="flex-box works-column al-c mb-30">
-                <figure class="column-02-item"><a href="#" class="js-modal-link" data-img="img/portfolio_02.jpg" data-alt="ポートフォリオサイトPCサイズ" data-desc="朝早く起きるのが得意なので、メインビジュアルは夜明けをイメージして作成しました。&lt;br&gt;また、海が好きなのでセクションの区切りに波っぽさを入れたり、上から下へ濃い青に変化するグラデーションを使用することで私自身のことを深く知っていただけるようなサイトであることと海の深さが表現できるようにしました。"><figcaption>クリックで拡大</figcaption><img src="img/portfolio_02.jpg" alt="ポートフォリオサイトPCサイズ"></a></figure>
-                <figure class="column-02-item"><a href="#" class="js-modal-link" data-img="img/portfolio_03.jpg" data-alt="ポートフォリオサイトSPサイズ" data-desc="朝早く起きるのが得意なので、メインビジュアルは夜明けをイメージして作成しました。&lt;br&gt;また、海が好きなのでセクションの区切りに波っぽさを入れたり、上から下へ濃い青に変化するグラデーションを使用することで私自身のことを深く知っていただけるようなサイトであることと海の深さが表現できるようにしました。"><figcaption>クリックで拡大</figcaption><img src="img/portfolio_03.jpg" width="70%" alt="ポートフォリオサイトSPサイズ"></a></figure>
+        <section>
+            <div class="flex-box works-column">
+                <div class="photo-box">
+                    <div class="preview pc">
+                        <figure class="preview-inner">
+                            <img class="previewImg" src="img/portfolio_pc.jpg" data-base="img/portfolio" alt="" />
+                        </figure>
+                    </div>
+                </div>
+                <div class="text-box">
+                    <div class="button_container">
+                        <div class="flex-box">
+                            <button class="pcBtn is-active">Desktop</button>
+                            <button class="spBtn">Smartphone</button>
+                        </div>
+                    </div>
+                    <h1 class="category_title">ポートフォリオサイト</h1>
+                    <p>自主制作</p>
+                    <p><span class="category_text">design</span><span class="category_text">coding</span></p>
+                    <p class="category_link"><a href="https://mrsk613.github.io/mysite/index.html" target="_blank" class="blank_icon">https://mrsk613.github.io/mysite/index.html</a></p>
+                    <dl class="works__content">
+                        <dt>制作期間</dt>
+                        <dd>2025年11月～12月</dd>
+                        <dt>担当領域</dt>
+                        <dd>デザイン／コーディング</dd>
+                        <dt>使用ツール</dt>
+                        <dd>figma／Adobe Photoshop／Visual Studio Code</dd>
+                    </dl>
+
+                    <p>自身の活動をまとめたポートフォリオサイトです。</p>
+                    <p>朝早く起きるのが得意なので、メインビジュアルは夜明けをイメージして作成しました。</p>
+                    <p>また、海が好きなのでセクションの区切りに波っぽさを入れたり、上から下へ濃い青に変化するグラデーションを使用することで私自身のことを深く知っていただけるようなサイトであることと海の深さが表現できるようにしました。</p>
+                </div>
             </div>
-        </search>
+        </section>
     </main>
     <footer>
         <p>© PORTFOLIO All Rights Reserved.</p>
     </footer>
-    <script type="text/javascript" src="../assets/js/modal.js"></script>
+    <script type="text/javascript" src="../assets/js/works.js"></script>
 </body>
 
 </html>

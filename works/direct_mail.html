@@ -7,7 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Shadows+Into+Light&display=swap"
+        rel="stylesheet">
     <link rel="icon" href="../assets/img/favicon.ico">
     <link rel="stylesheet" href="../assets/css/style.css">
 
@@ -15,7 +17,7 @@
 </head>
 
 <body>
-    <header class="header">
+    <header class="header nowave">
         <a href="../index.html" class="title"><strong>Portfolio</strong></a>
         <nav class="nav">
             <a href="../profile.html">Profile</a>
@@ -24,48 +26,34 @@
     </header>
     <main>
         <nav class="breadcrumbs">
-                <ol>
-                    <li><a href="../index.html">TOP</a></li>
-                    <li><a href="index.html">Works</a></li>
-                    <li>ダイレクトメール</li>
-                </ol>
-            </nav>
+            <ol>
+                <li><a href="../index.html">TOP</a></li>
+                <li><a href="index.html">Works</a></li>
+                <li>ダイレクトメール</li>
+            </ol>
+        </nav>
         <section class="container">
             <figure class="al-c mb-60">
                 <img src="img/direct_mail.jpg" alt="ダイレクトメール">
             </figure>
-            <p><span class="category_text">DTP design</span></p>
             <h1 class="category_title">ダイレクトメール</h1>
             <p>自主制作</p>
-            <table class="works-table">
-                <tbody>
-                    <tr>
-                        <th>サイズ</th>
-                        <td class="data">縦：100mm／横：148mm</td>
-                    </tr>
-                    <tr>
-                        <td class="bar" colspan="6"></td>
-                    </tr>
-                    <tr>
-                        <th>制作年月</th>
-                        <td class="data">2017年5月</td>
-                    </tr>
-                    <tr>
-                        <td class="bar" colspan="6"></td>
-                    </tr>
-                    <tr>
-                        <th>使用ツール</th>
-                        <td class="data">Adobe Photoshop／Adobe Illustrator</td>
-                    </tr>
-                </tbody>
-            </table>
+            <p><span class="category_text">DTP design</span></p>
+            <dl class="works__content">
+                <dt>サイズ</dt>
+                <dd>縦：100mm／横：148mm</dd>
+                <dt>制作年月</dt>
+                <dd>2017年5月</dd>
+                <dt>使用ツール</dt>
+                <dd>Adobe Photoshop／Adobe Illustrator</dd>
+            </dl>
             <p>架空の作品展のダイレクトメールデザインです。表に使用した写真は実際に撮影しました。</p>
             <p class="mb-60">2枚の写真を組み合わせ、透過度を調整し葉が揺れている様子を表現しました。</p>
-            <div class="flex-box works-column al-c mb-30">
-                <figure class="column-02-item"><a href="#" class="js-modal-link" data-img="img/direct_mail_01.jpg" data-alt="ダイレクトメール" data-desc="架空の作品展のダイレクトメールデザインです。表に使用した写真は実際に撮影しました。&lt;br&gt;2枚の写真を組み合わせ、透過度を調整し葉が揺れている様子を表現しました。"><figcaption>クリックで拡大</figcaption><img src="img/direct_mail_01.jpg" alt="文庫本の表紙デザイン"></a></figure>
-                <figure class="column-02-item"><a href="#" class="js-modal-link" data-img="img/direct_mail_02.jpg" data-alt="ダイレクトメール" data-desc="架空の作品展のダイレクトメールデザインです。表に使用した写真は実際に撮影しました。&lt;br&gt;2枚の写真を組み合わせ、透過度を調整し葉が揺れている様子を表現しました。"><figcaption>クリックで拡大</figcaption><img src="img/direct_mail_02.jpg" alt="文庫本の表紙デザイン"></a></figure>
+            <div class="flex-box al-c" style="column-gap: 24px;">
+                <figure class="column-02-item"><img src="img/direct_mail_01.jpg" alt="ダイレクトメールデザイン（表）"></figure>
+                <figure class="column-02-item"><img src="img/direct_mail_02.jpg" alt="ダイレクトメールデザイン（裏）"></figure>
             </div>
-        </search>
+        </section>
     </main>
     <footer>
         <p>© PORTFOLIO All Rights Reserved.</p>

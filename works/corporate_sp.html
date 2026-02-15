@@ -15,7 +15,7 @@
 </head>
 
 <body>
-    <header class="header">
+    <header class="header nowave">
         <a href="../index.html" class="title"><strong>Portfolio</strong></a>
         <nav class="nav">
             <a href="../profile.html">Profile</a>
@@ -24,54 +24,50 @@
     </header>
     <main>
         <nav class="breadcrumbs">
-                <ol>
-                    <li><a href="../index.html">TOP</a></li>
-                    <li><a href="index.html">Works</a></li>
-                    <li>コーポレートサイト</li>
-                </ol>
-            </nav>
-        <section class="container">
-            <figure class="al-c mb-60">
-                <img src="img/corporate_sp.jpg" alt="">
-            </figure>
-            <p><span class="category_text">design</span><span class="category_text">coding</span></p>
-            <h1 class="category_title">コーポレートサイト</h1>
-            <p>自主制作</p>
-            <p class="category_link"><a href="https://mrsk613.github.io/enishi.co.jp/" target="_blank" class="blank_icon">https://mrsk613.github.io/enishi.co.jp/</a></p>
-            <table class="works-table">
-                <tbody>
-                    <tr>
-                        <th>制作期間</th>
-                        <td class="data">2022年12月（工数：40時間ほど）</td>
-                    </tr>
-                    <tr>
-                        <td class="bar" colspan="6"></td>
-                    </tr>
-                    <tr>
-                        <th>担当領域</th>
-                        <td class="data">デザイン／コーディング</td>
-                    </tr>
-                    <tr>
-                        <td class="bar" colspan="6"></td>
-                    </tr>
-                    <tr>
-                        <th>使用ツール</th>
-                        <td class="data">AdobeXD／Adobe Photoshop／Visual Studio Code</td>
-                    </tr>
-                </tbody>
-            </table>
-            <p>自主制作のHPです。</p>
-            <p class="mb-60">少し堅めのホームページの制作をしたことがなかったので制作しました。全体的に色味をそろえ、スクロールで動きをつけることで視認性を高めました。</p>
-            <div class="flex-box works-column al-c mb-30">
-                <figure class="column-02-item"><a href="#" class="js-modal-link" data-img="img/corporate_sp_01.jpg" data-alt="コーポレートサイトPCサイズ" data-desc="少し堅めのホームページの制作をしたことがなかったので制作しました。全体的に色味をそろえ、スクロールで動きをつけることで視認性を高めました。"><figcaption>クリックで拡大</figcaption><img src="img/corporate_sp_01.jpg" alt="コーポレートサイトPCサイズ"></a></figure>
-                <figure class="column-02-item"><a href="#" class="js-modal-link" data-img="img/corporate_sp_02.jpg" data-alt="コーポレートサイトSPサイズ" data-desc="少し堅めのホームページの制作をしたことがなかったので制作しました。全体的に色味をそろえ、スクロールで動きをつけることで視認性を高めました。"><figcaption>クリックで拡大</figcaption><img src="img/corporate_sp_02.jpg" width="70%" alt="コーポレートサイトSPサイズ"></a></figure>
+            <ol>
+                <li><a href="../index.html">TOP</a></li>
+                <li><a href="index.html">Works</a></li>
+                <li>コーポレートサイト</li>
+            </ol>
+        </nav>
+        <section>
+            <div class="flex-box works-column">
+                <div class="photo-box">
+                    <div class="preview pc">
+                        <figure class="preview-inner">
+                            <img class="previewImg" src="img/corporate02_pc.jpg" data-base="img/corporate02" alt="" />
+                        </figure>
+                    </div>
+                </div>
+                <div class="text-box">
+                    <div class="button_container">
+                        <div class="flex-box">
+                            <button class="pcBtn is-active">Desktop</button>
+                            <button class="spBtn">Smartphone</button>
+                        </div>
+                    </div>
+                    <h1 class="category_title">コーポレートサイト</h1>
+                    <p>自主制作</p>
+                    <p><span class="category_text">design</span><span class="category_text">coding</span></p>
+                    <dl class="works__content">
+                        <dt>制作期間</dt>
+                        <dd>2022年12月（工数：40時間ほど）</dd>
+                        <dt>担当領域</dt>
+                        <dd>デザイン／コーディング</dd>
+                        <dt>使用ツール</dt>
+                        <dd>AdobeXD／Adobe Photoshop／Visual Studio Code</dd>
+                    </dl>
+
+                    <p>自主制作のHPです。</p>
+                    <p>少し堅めのホームページの制作をしたことがなかったので制作しました。全体的に色味をそろえ、スクロールで動きをつけることで視認性を高めました。</p>
+                </div>
             </div>
-        </search>
+        </section>
     </main>
     <footer>
         <p>© PORTFOLIO All Rights Reserved.</p>
     </footer>
-    <script src="../assets/js/modal.js"></script>
+    <script src="../assets/js/works.js"></script>
 </body>
 
 </html>
