@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Shadows+Into+Light&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="icon" href="assets/img/favicon.ico">
     <link rel="stylesheet" href="assets/css/main.css">
 
@@ -28,8 +29,8 @@
         <section class="hero">
             <div class="hero-bg"></div>
             <div class="hero-content">
-                <h1 class="hero-title">Portfolio</h1>
-                <p class="hero-sub">Saki Morishita</p>
+                <h1 class="hero-title" data-aos="fade-up" data-aos-duration="1500">Portfolio</h1>
+                <p class="hero-sub" data-aos="fade-up" data-aos-duration="3000">Saki Morishita</p>
             </div>
             <div class="wave white">
                 <svg viewBox="0 0 1440 160" preserveAspectRatio="none">
@@ -42,7 +43,7 @@
                 <div class="flex-box mb-60">
                     <figure class="profile_image"><img src="assets/img/profile.jpg" alt=""></figure>
                     <div class="profile_text">
-                        <h2>Profile</h2>
+                        <h2 class="mask-bg anime">Profile</h2>
                         <p class="name"><strong>森下　紗稀</strong>Saki Morishita</p>
                         <p>Webデザイナー/フロントエンドコーダー</p>
                         <p>デザインからコーディングまで一貫して対応可能</p>
@@ -58,10 +59,10 @@
             </div>
         </section>
         <section class="skills">
-            <div class="skills_container">
-                <h2>Skills</h2>
+            <div class="skills_container text-center">
+                <h2 class="mask-bg anime">Skills</h2>
                 <div class="flex-box">
-                    <div class="skills-box">
+                    <div class="skills-box" data-aos="fade-up" data-aos-duration="1500">
                         <h3>Design</h3>
                         <figure class="al-c"><img src="assets/img/design.png" alt=""></figure>
                         <ul>
@@ -71,7 +72,7 @@
                             <li>Figma</li>
                         </ul>
                     </div>
-                    <div class="skills-box">
+                    <div class="skills-box" data-aos="fade-up" data-aos-duration="3000">
                         <h3>Coding</h3>
                         <figure class="al-c"><img src="assets/img/coding.png" alt=""></figure>
                         <ul>
@@ -90,8 +91,8 @@
                 </svg>
             </div>
         </section>
-        <section class="works">
-            <h2>Works</h2>
+        <section class="works text-center">
+            <h2 class="mask-bg anime">Works</h2>
             <div class="works_container">
                 <div class="sliderArea">
                     <div class="slider">
@@ -142,7 +143,10 @@
     </footer>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script type="text/javascript" src="assets/js/main.js"></script>
+    <script>
+        AOS.init();
     </script>
 </body>
 
